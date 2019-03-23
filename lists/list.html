@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script></head>
+<body>
+    <div class="tabs is-centered is-boxed is-toggle is-toggle-rounded">
+                <ul>
+                <li>
+                     <a href="../index.html">
+                        <span class="icon is-small"><i class="fa fa-home" aria-hidden="true"></i></span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                  <li >
+                    <a href="../Wall.html">
+                      <span class="icon is-small"><i class="fas fa-image" aria-hidden="true"></i></span>
+                      <span>Wallpapers</span>
+                    </a>
+                  </li>
+                  <li class="is-active">
+                    <a href="../lists/list.html">
+                      <span class="icon is-small"><i class="far fa fa-search" aria-hidden="true"></i></span>
+                      <span>Search & Help</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="columns body-columns ">
+              <div class="column is-half is-offset-one-quarter has-text-centered	">
+                <div class="card">
+                  <div class="field">
+                    <div class="control">
+                    <input class="input is-primary " type="text" id="myInput" onkeyup="myFunction()" placeholder="Search" title="blog Of security news & Hacking news lastest Cve & Exploits poc Of exploits">
+                  </div>  
+                  </div>
+                  </div>
+                <div class="card">
+                  <ul id="myUL">
+                    <li>
+                      <a href="../page/http-codes-status-requests.html">
+                          <span>http codes status requests </span>
+                      </a>
+                      <li>
+                        <a href="../page/What-is-xss-attack-how-to-use-it.html">explain of The Xss & How To use Xss exploit (Cross-site scripting)</a>
+                      </li>
+                    
+                      <li><a href="#">Billy</a></li>
+                      <li><a href="#">Bob</a></li>
+                    
+                      <li><a href="#">Calvin</a></li>
+                      <li><a href="#">Christina</a></li>
+                      <li><a href="#">Cindy</a></li>
+                  </ul>
+                </div>
+                  </div>
+                  </div>
+                  <script>
+                    // When the user scrolls down 20px from the top of the document, show the button
+                    window.onscroll = function() {scrollFunction()};
+                    
+                    function scrollFunction() {
+                      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        document.getElementById("myBtn").style.display = "block";
+                      } else {
+                        document.getElementById("myBtn").style.display = "none";
+                      }
+                    }
+                    
+                    // When the user clicks on the button, scroll to the top of the document
+                    function topFunction() {
+                      document.body.scrollTop = 0;
+                      document.documentElement.scrollTop = 0;
+                    }
+                    </script>                    
+                  <script>
+                      function myFunction() {
+                          var input, filter, ul, li, a, i, txtValue;
+                          input = document.getElementById("myInput");
+                          filter = input.value.toUpperCase();
+                          ul = document.getElementById("myUL");
+                          li = ul.getElementsByTagName("li");
+                          for (i = 0; i < li.length; i++) {
+                              a = li[i].getElementsByTagName("a")[0];
+                              txtValue = a.textContent || a.innerText;
+                              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                                  li[i].style.display = "";
+                              } else {
+                                  li[i].style.display = "none";
+                              }
+                          }
+                      }
+                      </script>
+            </body>
+<footer class="footer " >
+    <div class="content has-text-centered">
+      <p>
+        <strong>END</strong> by <a href="https://mamoun-benhafsa.github.io/Me/">Mamoun Benhafsa</a>
+      </p>
+    </div>
+  </footer>
+</html>

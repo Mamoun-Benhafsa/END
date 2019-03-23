@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wallpapers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+      
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more"; 
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less"; 
+          moreText.style.display = "inline";
+        }
+      }
+      </script>
+</head>
+<body>
+    <div class="tabs is-centered is-boxed is-toggle is-toggle-rounded ">
+
+                <ul>
+                <li>
+                     <a href="index.html">
+                        <span class="icon is-small"><i class="fa fa-home" aria-hidden="true"></i></span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                  <li class="is-active">
+                    <a href="Wall.html">
+                      <span class="icon is-small"><i class="fas fa-image" aria-hidden="true"></i></span>
+                      <span>Wallpapers</span>
+                    </a>
+                  </li>
+                    <a href="lists/list.html">
+                      <span class="icon is-small"><i class="far  fa fa-search" aria-hidden="true"></i></span>
+                      <span>Search & Help</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="columns body-columns ">
+                  <div class="column is-half is-offset-one-quarter has-text-centered	">
+                      <div class="card">
+                          
+                          <div class="media-content has-text-centered	">
+                                  <p class="title is-4 has-text-centered is-primary"><span class="tag is-primary is-large">Hardware Hacking</span></p>
+                              </div>
+                              <div class="card-image">
+                                  <figure class="image is-4by3">
+                                      <img src="https://images.unsplash.com/photo-1524234107056-1c1f48f64ab8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80" alt="hardware hacking" class="image is-128x128" title="hacking wallpapers hacking hardware arduino "> 
+                                  </figure>
+                          </div>
+                          <div class="control">
+                            <p class="subtitle is-danger">url Of The Pics:</p>
+                              <input class="input is-centered" type="text" value="https://bit.ly/2U9IehO" readonly>
+                            </div>
+                        </div>
+                        </div>
+                      </div>
+                      </div>
+</body>
+            <footer class="footer 	" >
+                <div class="content has-text-centered">
+                  <p>
+                    <strong>END</strong> by <a href="https://mamoun-benhafsa.github.io/Me/">Mamoun Benhafsa</a>
+                  </p>
+                </div>
+              </footer>
+</html>
+
+
+
+
+
+
+
+        
